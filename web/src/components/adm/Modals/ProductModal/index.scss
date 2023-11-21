@@ -1,0 +1,104 @@
+.container-modal {
+  position: absolute;
+  z-index: 999;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal-content {
+    height: 65%;
+    width: 70%;
+    background-color: #f8f8f8;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .row-btn {
+      width: 90%;
+      display: flex;
+      justify-content: end;
+
+      button {
+        border: transparent;
+        background-color: transparent;
+      }
+    }
+
+
+    .radiusImg-content {
+      height: 100px;
+      width: 100px;
+      border-radius: 70px;
+      background-color: #e5e5e5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      #img-radius {
+        visibility: hidden;
+        position: absolute;
+        ;
+      }
+
+      .img-in {
+        height: 100px;
+        width: 100px;
+        object-fit: cover
+      }
+    }
+
+    .input-row {
+      width: 93%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      textarea {
+        padding: 10px 10px;
+        max-width: 220px;
+        width: 220px;
+        height: 180px;
+        border-radius: 10px;
+        border: none;
+        color: #252525;
+        box-shadow: inset 0 5px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      textarea:focus {
+        outline: none;
+      }
+
+
+    }
+
+    .save-button {
+      height: 32px;
+      cursor: pointer;
+      width: 105px;
+      color: #FFF;
+      border: none;
+      background-color: #6C5DD3;
+      border-radius: 10px;
+      font-weight: 700;
+      transition: .3s;
+    }
+
+    .save-button:hover {
+      background-color: #4332ab;
+    }
+
+  }
+}

@@ -1,0 +1,41 @@
+.subheader-container {
+    background: #FFF;
+    box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.15);
+}
+
+.subheader {
+    height: 60px;
+    max-width: 98%;
+    padding: 0px 20px;
+    width: 98%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        color: #303030;
+        font-size: 20px;
+    }
+
+    button {
+        height: 32px;
+        cursor: pointer;
+        width: 105px;
+        color: #FFF;
+        border: none;
+        background-color: #6C5DD3;
+        border-radius: 10px;
+        transition: .3s;
+    }
+
+    button:hover {
+        background-color: #4332ab;
+    }
+}
+
+.subheader-scrolled {
+    position: fixed;
+    top: 0;
+    background-color: #303030;
+}

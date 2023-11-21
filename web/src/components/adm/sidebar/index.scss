@@ -1,0 +1,52 @@
+.side-bar{
+    position: relative;
+    top: 50%;
+    left: -7%;
+    height: 97%;
+    width: 17%;
+    transition: .5s ease-in-out;
+}
+
+aside{
+    margin-right: 20px;
+    position: relative;
+    top: 50%;
+    left: -2%;
+    transform: translate(50% , -50%);
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+
+    .btn-openSidebar{
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .navigation-menu{
+        display: flex;
+        flex-direction: column;
+
+        button{
+            background-color: transparent;
+            border: none;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            gap: 20px;
+        }
+    }
+}
+
+.closed{
+    background-color: #000;
+    height: 97%;
+    width: 5%;
+    transition: .5s ease-in-out;
+
+    
+}

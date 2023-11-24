@@ -1,4 +1,4 @@
-import './index.scss';
+import './Footer.scss';
 import { useState } from 'react';
 import axios from 'axios';
 import storage from 'local-storage'

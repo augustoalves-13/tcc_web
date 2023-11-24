@@ -1,0 +1,453 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Montserrat:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap');
+
+.pagina-galeriaLamborghini {
+        background-color: black;
+        width: 100%;
+        height: 370vh;
+        justify-content: center;
+        align-items: center;
+    
+        .cabecalho {
+            display: flex;
+            justify-content: space-around;
+           
+            h1 {
+                font-size: 20px;
+                color: white;
+                margin-right: 36%;
+                font-family: 'Bellota Text', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-top: 2.6%;
+    
+                
+            }
+    
+            .img2 {
+                width: 25%;
+                margin-right: -30px;
+            }
+        }
+    
+        .seta {
+            margin-top:-4.2%;
+    
+            .imgs {
+                width: 25px;
+                margin-left: 6.5%;
+            }
+        }
+        }
+    
+        .f-ft{
+    
+            display: block;
+    
+    
+            h2{
+                color: white;
+                font-size: 25px;
+                display: block;
+                text-align: center;
+                font-family: 'BenchNine', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-top: 5.5%;
+    
+                
+    
+            }
+    
+            .linha{
+            width: 100%;
+            height: 0.1vh;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(168, 134, 48, 1);
+            margin-top: 0%;
+            }
+    
+    
+            .d-img{
+                display: flex;
+                
+    
+                .imgg{
+                  width: 50%;
+                  height: 80vh;
+    
+                }
+    
+                .iimg{
+                    width: 50%;
+                    height: 80vh;
+                   
+                }
+            }
+    
+            .imgt{
+                width:102%;
+                height: 95vh;
+                margin-top: -1%;
+                
+              
+            }
+            .imgf{
+                width:100%;
+                height: 95vh;
+                margin-top: -1%;
+              
+            }
+    
+            .imgl{
+                margin-top: -1%;
+                width: 100%;
+                height: 85vh;
+                
+    
+              
+            }
+        }
+    
+        @media (max-width: 1250px) {
+            .pagina-galeriaLamborghini{
+        
+                width: 100%;
+                height: 282vh;
+        
+                .cabecalho{
+        
+                    h1{
+                        font-size: 15px;
+        
+                    }
+         }
+         .seta {
+            margin-top: -4.4%;
+        
+            .imgs {
+                width: 2.2%;
+                margin-left: 6.5%;
+            }
+        
+        }
+        .f-ft{
+            
+            h2{
+                font-size: 20px;
+            }
+        
+            .d-img{
+        
+            .imgg{
+                height: 70vh;
+            }
+        
+            .iimg{
+            height: 70vh;
+            }
+        }
+        
+        .imgt{ 
+            height: 75vh;
+        }
+        
+        .imgf{
+            height: 90vh;
+        }
+        .imgl{
+            height: 75vh;
+        }
+        
+        }   
+            }  
+        }
+    
+    
+    @media (max-width: 1050px) {
+        .pagina-galeriaLamborghini{
+    
+            width: 100%;
+            height: 265vh;
+    
+            .cabecalho{
+    
+                h1{
+                    font-size: 15px;
+    
+                }
+     }
+     .seta {
+        margin-top: -4.4%;
+    
+        .imgs {
+            width: 2.4%;
+            margin-left: 6%;
+        }
+    
+    }
+    .f-ft{
+        
+        h2{
+            font-size: 20px;
+        }
+    
+        .d-img{
+    
+        .imgg{
+            height: 70vh;
+        }
+    
+        .iimg{
+        height: 70vh;
+        }
+    }
+    
+    .imgt{ 
+        height: 65vh;
+    }
+    
+    .imgf{
+        height: 60vh;
+    }
+    .imgl{
+        height: 60vh;
+    }
+    
+    }   
+        }  
+    }
+    
+    @media (max-width: 850px) {
+        .pagina-galeriaLamborghini{
+    
+            width: 100%;
+            height: 288vh;
+    
+            .cabecalho{
+    
+                h1{
+                    font-size: 15px;
+    
+                }
+     }
+     .seta {
+        margin-top: -4.6%;
+    
+        .imgs {
+            width: 2.4%;
+            margin-left: 6%;
+        }
+    
+    }
+    .f-ft{
+        
+        h2{
+            font-size: 20px;
+        }
+    
+        .d-img{
+    
+        .imgg{
+            height: 70vh;
+        }
+    
+        .iimg{
+        height: 70vh;
+        }
+    }
+    
+    .imgt{ 
+        height: 65vh;
+    }
+    
+    .imgf{
+        height: 75vh;
+    }
+    .imgl{
+        height: 60vh;
+    }
+    
+    }   
+        }  
+    }
+    
+    @media (max-width: 700px) {
+        .pagina-galeriaLamborghini{
+    
+            width: 100%;
+            height: 221vh;
+    
+            .cabecalho{
+    
+                h1{
+                    font-size: 11px;
+    
+                }
+     }
+     .seta {
+        margin-top: -5.3%;
+    
+        .imgs {
+            width: 2.4%;
+            margin-left: 6.2%;
+        }
+    
+    }
+    .f-ft{
+        
+        h2{
+            font-size: 20px;
+        }
+    
+        .d-img{
+    
+        .imgg{
+            height: 60vh;
+        }
+    
+        .iimg{
+        height: 60vh;
+        }
+    }
+    
+    .imgt{ 
+        height: 50vh;
+    }
+    
+    .imgf{
+        height: 55vh;
+    }
+    .imgl{
+        height: 40vh;
+    }
+    
+    }   
+    }}
+    
+    
+    
+    @media (max-width: 550px) {
+        .pagina-galeriaLamborghini{
+    
+            height: 168vh;
+    
+            .cabecalho{
+    
+                h1{
+                    font-size: 11px;
+    
+                }
+     }
+     .seta {
+        margin-top: -28px;
+    
+        .imgs {
+            width: 2.9%;
+            margin-left: 6%;
+        }
+    
+    }
+    .f-ft{
+        
+        h2{
+            font-size: 15px;
+        }
+    
+        .d-img{
+    
+        .imgg{
+            height: 40vh;
+        }
+    
+        .iimg{
+        height: 40vh;
+        }
+    }
+    
+    .imgt{ 
+        height: 40vh;
+    }
+    
+    .imgf{
+        height: 40vh;
+    }
+    .imgl{
+        height: 35vh;
+    }
+    
+    }   
+        }
+    }    
+    
+    @media (max-width: 400px) {
+        .pagina-galeriaLamborghini{
+    
+            height: 131vh;
+    
+            .img2{
+                width: 75px;
+                height: 5vh;
+                margin-left: -50px;
+               
+            }
+    
+            .cabecalho{
+                h1{
+                    font-size: 8px;
+                    margin-left: -10px;
+                    margin-top: 15px;
+                }
+            }
+    
+    
+            .seta {
+                margin-top: -26px;
+            
+                .imgs {
+                    width: 2.8%;
+                    margin-left: 7%;
+                }
+            
+            }
+    
+            .f-ft{
+        
+                h2{
+                    font-size: 10px;
+                }
+            
+                .d-img{
+            
+                .imgg{
+                    height: 35vh;
+                }
+            
+                .iimg{
+                height: 35vh;
+                }
+            }
+            
+            .imgt{ 
+                height: 30vh;
+            }
+            
+            .imgf{
+                height: 30vh;
+            }
+            .imgl{
+                height: 25vh;
+            }
+            
+            }   
+    
+        }
+    }
+    
+    

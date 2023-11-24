@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import './index.scss'
 import { listAllProducts } from "../../../../api/produto"
+import axios from "axios"
 
 const ProductTable = () =>{
 
@@ -11,10 +12,10 @@ const ProductTable = () =>{
   }
 
    async function handleGetProducts(){
-      const resp = await listAllProducts()
+      const resp = await axios.get('http://localhost:5000/produtos')
 
-      console.log(resp)
-      setProducts(resp)
+      console.log(resp.data)
+      setProducts(resp.data)
    }
 
 
@@ -24,7 +25,8 @@ const ProductTable = () =>{
    
    
    return(
-      <table>
+      <>
+        <table className="tb-products">
             <div className='container-headTable'>
                 <thead>
                     <tr>
@@ -46,6 +48,7 @@ const ProductTable = () =>{
                 ))}
             </tbody>
         </table>
+      </>
    )
 }
 

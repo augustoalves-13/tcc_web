@@ -6,6 +6,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import Storage from 'local-storage';
 import ProductsHeader from '../../components/web/Headers/ProductsPageHeader';
 import { useNavigate } from 'react-router-dom';
+import { API_URL } from '../../api/config';
+import HeaderHome from '../../components/web/Headers/HomeHeader';
 
 const ProductPageFront = () => {
    const [products, setProducts] = useState([]);
@@ -17,6 +19,7 @@ const ProductPageFront = () => {
    useEffect(() => {
       async function ListarProdutos() {
          const response = await axios.get('http://localhost:5000/admin/produtos');
+         console.log(response.data)
          setProducts(response.data);
       }
 
@@ -62,10 +65,13 @@ const ProductPageFront = () => {
       navigate('/produto/' +(id+1)+ '/detalhes')
    }
 
+   function showImg(image){
+      return API_URL +'/'+image 
+   }
 
    return (
       <div className="container-main">
-         <ProductsHeader title="Produtos" />
+         <HeaderHome/>
          <main className="main-content">
             {products.map((item, index) => (
                <ProductCard
@@ -73,7 +79,7 @@ const ProductPageFront = () => {
                   key={item.id}
                   title={item.nome}
                   price={item.valor}
-                  img={item.img}
+                  img={showImg(item.img)}
                   isFavorite={favorites.includes(item.id)} 
                   onClick={() => addToFavoritesStorage(item)}
                   onClickCar={()=>addToCartLocalStorage(item.id)}

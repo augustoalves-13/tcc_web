@@ -8,6 +8,8 @@ import InputDefault from '../../components/Inputs';
 import { ToastContainer, toast } from 'react-toastify';
 import bg from '../../assets/images/loginImages/bg.png'
 import escudo from '../../assets/images/loginImages/escudo.png'
+import { LoginUser, RegisterUser } from '../../api/userAPI';
+import ModalRegister from '../../components/web/Modals/ModalCadastro';
 
 
 const LoginPage = () => {
@@ -15,20 +17,17 @@ const LoginPage = () => {
     const [senha, setSenha] = useState('')
     const [result, setResult] = useState("")
     const [register, setRegister] = useState(false)
+    const [adm, setAdm] = useState()
+    const [visible, setVisible] = useState(false)
+
 
     const navigate = useNavigate()
 
     async function userLogin() {
         try {
-
-            const r = await axios.post("http://localhost:5000/user/login", {
-                email: email,
-                senha: senha,
-            })
-
-            storage("user-logado", r)
-
-            navigate("/compre")
+            const response = await LoginUser(email, senha)
+            storage("user-logado", response)
+            navigate("/produtos")
 
         } catch (err) {
             if (err.response.status == 401) {
@@ -38,20 +37,35 @@ const LoginPage = () => {
     }
 
 
+    async function Register() {
+        try {
 
-    function handleBox() {
-        if (register == false) {
-            setRegister(true)
-        } else {
-            setRegister(false)
+            const response = await RegisterUser()
+
+        } catch (err) {
+
+        }
+    }
+
+    const Adm = () => {
+        if (!adm) {
+            setAdm(true)
+            console.log('a')
+        } else if (adm == true) {
+            setAdm("a")
+            console.log('b')
+        } else if (adm === "a") {
+            navigate('/admin')
+            console.log('c')
         }
     }
 
     return (
         <div className="login-container">
+                <ModalRegister value={register} setValue={setRegister} />
             <div className={`box-login ${register ? 'login-hidden' : 'login-true'}`}>
                 <div className='escudo'>
-                    <img src={escudo} />
+                    <img onClick={Adm} src={escudo} />
                     <h2>LOGIN</h2>
                 </div>
                 <div className="content-login">
@@ -71,32 +85,6 @@ const LoginPage = () => {
                 </div>
             </div>
             <img className='background-img' src={bg} />
-            <div className={`box-register ${register ? 'register-true' : 'register-false'}`}>
-                <div className='escudo'>
-                    <img src={escudo} />
-                    <h2>CADASTRE-SE</h2>
-                    <div className="content-login">
-                        <div className="in-container">
-                            <label>Nome Completo:</label>
-                            <input className='inputs' value={email} onChange={e => setEmail(e.target.value)} />
-                        </div>
-                        <div className="in-container">
-                            <label>E-mail:</label>
-                            <input className='inputs' value={senha} onChange={e => setSenha(e.target.value)} />
-                        </div>
-                        <div className="in-container">
-                            <label>Senha:</label>
-                            <input className='inputs' value={senha} onChange={e => setSenha(e.target.value)} />
-                        </div>
-                        <div className="btn-container">
-                            <button onClick={userLogin}>Cadastre-se</button>
-                            <p onClick={() => setRegister(false
-                                )}>Já possui uma conta, cadastre-se?</p>
-                        </div>
-                    </div>
-                </div>
-                <ToastContainer />
-            </div>
         </div>
     )
 }

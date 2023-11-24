@@ -16,7 +16,7 @@ header{
         .hyper-link{
             text-decoration: none;
 
-            p{
+            h2{
                 color: #fff;
             }
         }
@@ -24,26 +24,32 @@ header{
         .input-container{
             display: flex;
             flex-direction: row;
-
+            justify-content: center;
+            width: 50%;
             
             input{
                 height: 40px;
-                width: 100%;
-                border-radius: 10px 0px 0px 10px;
+                min-width: 50%;
+                border-radius: 15px 0px 0px 15px;
                 outline: none;
             }
 
             button{
                 height: 40px;
                 width: 40px;
-                border-radius: 0px 10px 10px 0px;
+                border-radius: 0px 15px 15px 0px;
                 border: none;
                 outline: NONE;
                 }
         }
 
-        img{
-            width: 100px;
+        .links{
+            display: flex;
+            gap: 20px;
+
+            img{
+                width: 130px;
+            }
         }
     }
 }

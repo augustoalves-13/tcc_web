@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&family=Montserrat:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap');
+
+.pagina-galeriacovette {
+    background-color: black;
+    width: 100%;
+    height: 316vh;
+    justify-content: center;
+    align-items: center;
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-around;
+       
+        
+        h1 {
+            font-size: 17px;
+            color: white;
+            margin-right: 36%;
+            font-family: 'Bellota Text', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 2.6%;
+
+            
+        }
+
+        .img2 {
+            width: 25%;
+            margin-right: -30px;
+        }
+    }
+
+    .seta {
+        margin-top: -4.4%;
+
+        .imgs {
+            width: 2%;
+            margin-left: 6.5%;
+        }
+    }
+
+    .f-ft{
+
+        display: block;
+
+
+        h2{
+            color: white;
+            font-size: 25px;
+            display: block;
+            text-align: center;
+            font-family: 'BenchNine', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 5.5%;
+
+            
+
+        }
+
+        .linha{
+        width: 100%;
+        height: 0.1vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(168, 134, 48, 1);
+        margin-top: 0%;
+        }
+
+
+        .d-img{
+            display: flex;
+            
+
+            .imgg{
+              width: 50%;
+              height: 80vh;
+
+            }
+
+            .iimg{
+                width: 50%;
+                height: 80vh;
+               
+            }
+        }
+
+        .imgt{
+            width:100%;
+            height: 80vh;
+            margin-top: -1%;
+            
+          
+        }
+        .imgf{
+            width:100%;
+            height: 90vh;
+            margin-top: -1%;
+          
+        }
+
+        .imgl{
+            margin-top: -1%;
+            width: 100%;
+            height: 75vh;
+            
+
+          
+        }
+    }
+
+
+@media (max-width: 750px) {
+    .pagina-galeriacovette{
+
+        width: 100%;
+        height: 233vh;
+
+        .cabecalho{
+
+            h1{
+                font-size: 15px;
+
+            }
+ }
+ .seta {
+    margin-top: -33px;
+
+    .imgs {
+        width: 2.4%;
+        margin-left: 6%;
+    }
+
+}
+.f-ft{
+    
+    h2{
+        font-size: 20px;
+    }
+
+    .d-img{
+
+    .imgg{
+        height: 70vh;
+    }
+
+    .iimg{
+    height: 70vh;
+    }
+}
+
+.imgt{ 
+    height: 50vh;
+}
+
+.imgf{
+    height: 55vh;
+}
+.imgl{
+    height: 45vh;
+}
+
+}   
+    }  
+}
+
+@media (max-width: 550px) {
+    .pagina-galeriacovette{
+
+        height: 172vh;
+
+        .cabecalho{
+
+            h1{
+                font-size: 11px;
+
+            }
+ }
+ .seta {
+    margin-top: -27px;
+
+    .imgs {
+        width: 2.9%;
+        margin-left: 6%;
+    }
+
+}
+.f-ft{
+    
+    h2{
+        font-size: 15px;
+    }
+
+    .d-img{
+
+    .imgg{
+        height: 45vh;
+    }
+
+    .iimg{
+    height: 45vh;
+    }
+}
+
+.imgt{ 
+    height: 40vh;
+}
+
+.imgf{
+    height: 40vh;
+}
+.imgl{
+    height: 35vh;
+}
+
+}   
+    }
+}    
+
+@media (max-width: 400px) {
+    .pagina-galeriacovette{
+
+        height: 120vh;
+
+        .img2{
+            width: 70px;
+            height: 5vh;
+            margin-left: -50px;
+           
+        }
+
+        .cabecalho{
+            h1{
+                font-size: 9px;
+                margin-left: -10px;
+                margin-top: 15px;
+            }
+        }
+
+
+        .seta {
+            margin-top: -31px;
+        
+            .imgs {
+                width: 2.8%;
+                margin-left: 7%;
+            }
+        
+        }
+
+        .f-ft{
+    
+            h2{
+                font-size: 10px;
+            }
+        
+            .d-img{
+        
+            .imgg{
+                height: 35vh;
+            }
+        
+            .iimg{
+            height: 35vh;
+            }
+        }
+        
+        .imgt{ 
+            height: 26vh;
+        }
+        
+        .imgf{
+            height: 26vh;
+        }
+        .imgl{
+            height: 23vh;
+        }
+        
+        }   
+
+    }
+}
+
+@media (max-width: 300px) {
+    .pagina-galeriacovette{
+        height: 93vh;
+
+        .cabecalho{
+            h1{
+                font-size: 8px;
+            }
+
+            .img2{
+                width: 35%;
+                height: 4vh;
+                margin-left: -60px;
+                margin-top: 5px;
+            }
+        }
+
+        .seta {
+            margin-top: -29px;
+        
+            .imgs {
+                width: 4%;
+                margin-left: 5%;
+            }
+        
+        }
+
+        .f-ft{
+    
+            h2{
+                font-size: 10px;
+            }
+        
+            .d-img{
+        
+            .imgg{
+                height: 25vh;
+            }
+        
+            .iimg{
+            height: 25vh;
+            }
+        }
+        
+        .imgt{ 
+            height: 20vh;
+        }
+        
+        .imgf{
+            height: 20vh;
+        }
+        .imgl{
+            height: 17vh;
+        }
+        
+        }   
+
+
+    }
+}
+}

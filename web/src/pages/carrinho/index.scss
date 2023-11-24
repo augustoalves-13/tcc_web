@@ -1,18 +1,71 @@
-.container-carrinho{
+.container-carrinho {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #000;
     gap: 10%;
     color: #fff;
-    
 
-    .cart-items{
+
+    section {
+        padding: 10% 0;
+        height: 90%;
         width: 90%;
         display: flex;
-        flex-direction: column;
-        gap: 15px;
-        padding: 0px 10px;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .cart-items {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 0px 10px;
+        }
+
+        .side-cart {
+            width: 25%;
+            height: 100%;
+            background-color: #080808;
+            box-shadow: 0px 0px 10px 2px #2f2e2e;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            padding: 40px 0px;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            button {
+                height: 40px;
+                width: 130px;
+                background-color: #A88635;
+                color: #fff;
+                border: none;
+                border-radius: 30px;
+                transition: .5s;
+            }
+       
+            button:hover {
+                box-shadow: 0px 2px 5px 0px #a88635a1;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px){
+    .container-carrinho{
+
+        section{
+            gap: 10px;
+        }
     }
 }

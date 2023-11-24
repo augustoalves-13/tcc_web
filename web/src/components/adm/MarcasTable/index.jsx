@@ -27,7 +27,7 @@ const MarcasTable = (props) => {
         <table>
             <div className='container-headTable'>
                 <thead>
-                    <tr>
+                    <tr className='head-line'>
                         <th>Logo</th>
                         <th>ID</th>
                         <th>Marca</th>

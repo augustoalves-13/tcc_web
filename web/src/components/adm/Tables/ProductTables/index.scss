@@ -1,4 +1,4 @@
-table{
+.td-products{
     height: 60%;
     max-width: 98%;
     width: 98%;
@@ -44,7 +44,7 @@ table{
         flex-direction: column;
 
         
-        tr{
+        .cor-clara{
             display: flex;
             align-items: center;
             gap: 80px;

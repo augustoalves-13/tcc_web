@@ -6,12 +6,16 @@ import { useEffect, useState } from 'react'
 import { ListarTodasMarcas } from '../../../api/marca'
 import MarcasTable from '../../../components/adm/MarcasTable'
 import MarcaModal from '../../../components/adm/Modals/ModalMarca'
+import Storage from 'local-storage'
+import { useNavigate } from 'react-router-dom'
+import CheckLogin from '../../../components/adm/Verificacao'
 
 
 const ControleMarcas = () => {
 
     const [search, setSearch] = useState('')
     const [modalVisible, setModaVisible] = useState(false)
+    const navigate = useNavigate()
 
     const onOpen = () => {
         setModaVisible(true)
@@ -20,6 +24,8 @@ const ControleMarcas = () => {
     const onClose = () => {
         setModaVisible(false)
     }
+
+    CheckLogin()
 
     return (
         <div className="main-container">

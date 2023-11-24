@@ -16,6 +16,9 @@ const FavotitesPage = () => {
     
    return (
       <div>
+         <ProductsHeader
+            title='Favoritos'
+         />
          <h2>Produtos Favoritos</h2>
          {favorites.map((item) => (
             <ProductCard

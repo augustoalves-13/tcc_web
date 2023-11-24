@@ -18,7 +18,7 @@ const ProductPageFront = () => {
 
    useEffect(() => {
       async function ListarProdutos() {
-         const response = await axios.get('http://localhost:5000/admin/produtos');
+         const response = await axios.get('http://129.148.42.252:5032/admin/produtos');
          console.log(response.data)
          setProducts(response.data);
       }

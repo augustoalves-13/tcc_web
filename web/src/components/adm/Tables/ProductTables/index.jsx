@@ -12,7 +12,7 @@ const ProductTable = () =>{
   }
 
    async function handleGetProducts(){
-      const resp = await axios.get('http://localhost:5000/produtos')
+      const resp = await axios.get('http://129.148.42.252:5032/produtos')
 
       console.log(resp.data)
       setProducts(resp.data)

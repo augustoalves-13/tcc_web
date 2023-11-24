@@ -23,7 +23,7 @@ const ProductModal = ({ onClose }) => {
   async function ApiCall() {
     try {
 
-      const newProduct = await axios.post('http://localhost:5000/produtos/cadastrar', {
+      const newProduct = await axios.post('http://129.148.42.252:5032/produtos/cadastrar', {
         marca: marca,
         modelo: modelo,
         descricao: descricao,

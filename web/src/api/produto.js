@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL:'http://localhost:5000'
+    baseURL:'http://129.148.42.252:5032'
 })
 
 
@@ -11,7 +11,7 @@ export async function listAllProducts(){
 }
 
 export async function RegisterProduct(marca , modelo , descricao , preco , avaliacao , situacao){
-    const response = await api.post('http://localhost:5000/produtos/cadastrar', {
+    const response = await api.post('http://129.148.42.252:5032/produtos/cadastrar', {
         marca: marca,
         modelo: modelo,
         descricao: descricao,
@@ -38,7 +38,7 @@ export async function SendImg(id , imagem){
     const formData = new FormData()
     formData.append('capa' , imagem)
 
-    const response = await axios.put(`http://localhost:5000/produtos/${id}/poster` , formData , {
+    const response = await axios.put(`http://129.148.42.252:5032/produtos/${id}/poster` , formData , {
         headers:{
             "Content-Type":"multipart/form-data"
         }

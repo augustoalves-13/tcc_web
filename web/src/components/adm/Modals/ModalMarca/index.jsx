@@ -17,7 +17,7 @@ const MarcaModal = (props) => {
                 nome: name
             }
 
-            const response = await axios.post('http://localhost:5000/marcas/cadastrar', request)
+            const response = await axios.post('http://129.148.42.252:5032/marcas/cadastrar', request)
 
             toast.dark('Marca cadastrada com sucesso')
 

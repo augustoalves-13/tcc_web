@@ -41,7 +41,7 @@ const HeaderHome = ({rota}) => {
                     <div className="line"></div>
                 </div>
                 {buttonVisible == true &&
-                    <button onClick={() => navigate('/')}>
+                    <button onClick={() => navigate('/loginpage')}>
                         ENTRAR
                     </button>
                 }

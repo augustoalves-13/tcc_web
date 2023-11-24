@@ -7,6 +7,7 @@ import Storage from 'local-storage';
 import ProductsHeader from '../../components/web/Headers/ProductsPageHeader';
 import { useNavigate } from 'react-router-dom';
 import { API_URL } from '../../api/config';
+import Rodape from '../../components/web/Footer'
 import HeaderHome from '../../components/web/Headers/HomeHeader';
 
 const ProductPageFront = () => {
@@ -86,6 +87,7 @@ const ProductPageFront = () => {
                />
             ))}
          </main>
+         <Rodape/>
          <ToastContainer />
       </div>
    );

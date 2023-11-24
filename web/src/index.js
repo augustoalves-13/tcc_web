@@ -45,8 +45,8 @@ root.render(
       <Route path='/admin/produtos' element={<ProductPage />} />
       <Route path='/produtos' element={<ProductPageFront />} />
       <Route path='/favoritos' element={<FavotitesPage />} />
-      <Route path='/' element={<LoginPage />} />
-      <Route path='/home' element={<HomePage />} />
+      <Route path='/loginpage' element={<LoginPage />} />
+      <Route path='/' element={<HomePage />} />
       <Route path='/carrinho' element={<CarPage />} />
       <Route path='/produto/:id/detalhes' element={<ProductDetails />} />
       <Route path='/pedido' element={<PedidoPage />} />
